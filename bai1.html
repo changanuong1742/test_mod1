@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+
+    <script>
+    let diemToan;
+    let diemVan;
+    let diemAnh;
+    let dtb;
+
+do{
+      diemToan= parseInt(prompt("Nhập Điểm Toán: "));
+      diemVan = parseInt(prompt("Nhập Điểm Văn: "));
+      diemAnh = parseInt(prompt("Nhập Điểm Anh: "));
+      dtb = (diemToan + diemVan + diemAnh)/3;
+} while (dtb<0){
+   while (dtb<10){
+       if (dtb<5)
+        alert("Không đạt");
+       else if (dtb>=5 && dtb <7.5)
+        alert("Đạt");
+       else if (dtb>=7.6 && dtb <8.5)
+           alert("Khá");
+        else
+           alert("Tốt");
+   }
+}
+    alert("Nhập lại Đi");
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

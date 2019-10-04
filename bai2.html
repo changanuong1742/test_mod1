@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+
+
+</head>
+<body>
+<input  id ="nhap"/>
+<button onclick="kiem_tra_snt()">Kiểm Tra</button>
+<p id ="show"></p>
+
+
+<script>
+    function kiem_tra_snt(show) {
+        let nhap = Number(document.getElementById('nhap').value);
+    let snt = true;
+    let i;
+    if (nhap < 2){
+        snt = false;
+    }else {
+        if ( nhap == 2){
+            snt = true;
+        }else {
+            if (nhap %2 == 0){
+                snt = false
+            }else {
+                for (i=3 ; i<nhap-1; i+=2){
+                    if (nhap%i == 0 ){
+                        snt = false;
+                        break;
+                    }
+                }}}}
+
+    if (snt){
+        document.getElementById('show').innerHTML= nhap + " Là Số Nguyên Tố";
+
+    }else {
+        document.getElementById('show').innerHTML= nhap + " Không Phải Là Số Nguyên Tố";
+    }}
+</script>
+
+</body>
+</html>
